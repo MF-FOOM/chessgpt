@@ -1,4 +1,4 @@
-'use client'
+e'use client'
 
 import { Chess, ChessInstance, Move, ShortMove, Square } from "chess.js";
 import { useEffect, useRef, useState } from "react";
@@ -94,7 +94,6 @@ export default function PlayEngine() {
       console.log('key', key);
     }
     openai = new OpenAI({
-      organization: 'openai-internal',
       apiKey: key,
       dangerouslyAllowBrowser: true,
     })
